@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Topchii_402_lr1.Models;
+using Topchii_402_lr.Models;
 
-namespace Topchii_402_lr1.Controllers;
+namespace Topchii_402_lr.Controllers;
 
 [ApiController]
 [Route("[controller]")]

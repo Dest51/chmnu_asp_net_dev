@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topchii_402_lr1", "Topchii_402_lr1\Topchii_402_lr1.csproj", "{4B1B28A0-FF64-45BD-A622-C1340942BA8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topchii_402_lr", "Topchii_402_lr1\Topchii_402_lr.csproj", "{4B1B28A0-FF64-45BD-A622-C1340942BA8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

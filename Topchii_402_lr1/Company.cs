@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Topchii_402_lr1.Models
+namespace Topchii_402_lr.Models
 {
 	public class Company
 	{
