@@ -1,0 +1,21 @@
+﻿@model int
+
+<h2>Замовлення піци</h2>
+
+<p>Введіть кількість піц, які ви бажаєте замовити:</p>
+
+<form asp-action="Order">
+    <input type="number" name="quantity" min="1" />
+    <button type="submit">Підтвердити</button>
+</form>
+
+@if (Model > 0)
+{
+    for (int i = 0; i < Model; i++)
+    {
+        <p>Піца @(i + 1):</p>
+        <input type="text" name="products[i].Name" placeholder="Назва" />
+        <input type="number" name="products[i].Quantity" placeholder="Кількість" min="1" />
+    }
+    <button type="submit">Замовити</button>
+}

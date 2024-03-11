@@ -1,0 +1,14 @@
+﻿@model User
+
+<h1>Order Form</h1>
+
+<form asp-controller="Product" asp-action="SubmitOrder" method="post">
+    @for (int i = 0; i < User.Quantity; i++)
+    {
+        <div class="form-group">
+            <label for="ProductName">Product @i:</label>
+            <input type="text" class="form-control" id="ProductName" name="ProductName" required>
+        </div>
+    }
+    <button type="submit" class="btn btn-primary">Submit Order</button>
+</form>
