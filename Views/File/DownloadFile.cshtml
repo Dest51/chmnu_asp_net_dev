@@ -1,0 +1,23 @@
+﻿@model Topchii_402_lr7.Models.FileViewModel
+
+@{
+    ViewData["Title"] = "Download File";
+}
+
+<h2>Download File</h2>
+
+<form asp-action="DownloadFile" method="post">
+    <div class="form-group">
+        <label asp-for="FirstName">Ім'я:</label>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName">Прізвище:</label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FileName">Назва файлу:</label>
+        <input asp-for="FileName" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Продовжити</button>
+</form>
