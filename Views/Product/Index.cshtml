@@ -1,0 +1,84 @@
+﻿@model List<Topchii_402_lr8.Models.ProductModel>
+
+
+<h2>Вигляд списком</h2>
+
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.ID. @product.Name - <b>@product.Price</b> (@product.CreatedDate)</li>
+    }
+</ul>
+
+
+<h2>Табличний вигляд</h2>
+
+<table id="products-table">
+    <thead>
+        <tr>
+            <th class="id-section">Id</th>
+            <th class="name-section">Name</th>
+            <th class="price-section">Price</th>
+            <th class="date-section">Created Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td class="id-section">@product.ID</td>
+                <td class="name-section">@product.Name</td>
+                <td class="price-section">@product.Price</td>
+                <td class="date-section">@product.CreatedDate</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+<p>
+    &copy;
+    Created by Topchii Artem
+</p>
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    td {
+        text-align: left;
+    }
+
+    .id-section {
+        background-color: #fffacd;
+    }
+
+    .name-section {
+        background-color: #f0f8ff;
+    }
+
+    .price-section {
+        background-color: #faebd7;
+    }
+
+    .date-section {
+        background-color: #d7fffa;
+    }
+</style>
